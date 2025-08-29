@@ -9,7 +9,7 @@ import React, {
 } from "react";
 import gsap from "gsap";
 import { useRouter } from "next/navigation";
-import "./navigation.css";
+import "./Navigation.css";
 
 export const Navigation = () => {
   const navigationBar = useRef(null);
