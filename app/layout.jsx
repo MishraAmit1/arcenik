@@ -271,9 +271,6 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
           strategy="afterInteractive"
         />
-
-        {/* Google Site Verification (add your verification code) */}
-        {/* <meta name="google-site-verification" content="your-verification-code" /> */}
       </head>
       <body>
         <Navigation />
