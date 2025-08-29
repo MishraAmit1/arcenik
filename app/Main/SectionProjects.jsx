@@ -298,6 +298,7 @@ export const SectionProjects = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={onNextButtonClick}
+        style={{ position: "relative" }}
       >
         <div className="projects-gradient-top" />
         <div className="projects-gradient-bottom" />

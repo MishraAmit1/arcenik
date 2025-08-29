@@ -1,3 +1,4 @@
+"use client";
 import React, { Suspense, useEffect, useRef, useState, useMemo } from "react";
 import gsap from "gsap";
 import SplitText from "gsap/src/SplitText";
@@ -168,28 +169,12 @@ export const SectionHero = () => {
   // SSR fallback
   if (!isClient) {
     return (
-      <section className="hero">
-        <div className="hero-background-element-small" />
-        <div className="hero-background-element-grid-small" />
-        <div className="hero-content">
-          <div className="hero-content-row">
-            <div className="hero-content-left">
-              <div className="hero-textbox">
-                <div className="hero-titlebox">
-                  <div className="hero-titlebox-gradient" />
-                  <h1 className="headline hero-headline white">
-                    Crafting Digital <br /> Masterpieces
-                  </h1>
-                </div>
-                <p className="big-description grey">
-                  Harnessing Cutting-Edge Visualization Technology to Transform
-                  Vision into Tailored Digital Reality
-                </p>
-              </div>
-            </div>
-            <div className="hero-content-right">
-              <div className="three-loader">Loading 3D Scene...</div>
-            </div>
+      <section className="shimmer-section">
+        <div className="shimmer-content-right">
+          <div className="shimmer-loader">
+            <div className="shimmer-text">Preparing Experience...</div>
+            <div className="shimmer-button"></div>
+            <div className="shimmer-button"></div>
           </div>
         </div>
       </section>
@@ -249,12 +234,20 @@ export const SectionHero = () => {
             className="hero-content-right"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            style={{ position: "relative" }}
           >
             {/* Loading state OUTSIDE Canvas */}
             {!is3DLoaded && (
               <div className="three-loader">
-                <div className="three-loader-spinner"></div>
-                <p>Loading 3D Scene...</p>
+                <div className="cube-loader">
+                  <div className="cube-face face-front"></div>
+                  <div className="cube-face face-back"></div>
+                  <div className="cube-face face-right"></div>
+                  <div className="cube-face face-left"></div>
+                  <div className="cube-face face-top"></div>
+                  <div className="cube-face face-bottom"></div>
+                </div>
+                <p className="loading-text">Loading 3D Scene...</p>
               </div>
             )}
 

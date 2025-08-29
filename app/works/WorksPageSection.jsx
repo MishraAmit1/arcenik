@@ -395,6 +395,7 @@ export const WorksPageSection = () => {
               className="works-carousel-wrapper"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
+              style={{ position: "relative" }}
             >
               <div
                 className="works-carousel-wrapper-overlay"
