@@ -173,8 +173,7 @@ export const Navigation = () => {
             className="navigation-inside-left-image"
             alt="Arcenik Logo"
             loading="eager"
-            width="190"
-            height="190"
+            onClick={() => handleNavigate("/")}
           />
         </div>
 

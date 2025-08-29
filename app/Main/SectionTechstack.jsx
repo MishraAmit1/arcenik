@@ -592,6 +592,7 @@ export const SectionTechstack = () => {
                               ? " embla__dot--selected-small"
                               : ""
                           }`}
+                          aria-label={`Go to project ${index + 1}`}
                         />
                       ))}
                     </div>

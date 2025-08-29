@@ -953,7 +953,7 @@ section {
   /* CURSOR */
 
   .hover-cursor {
-    display: block;
+    display: none;
   }
 
   /* OVERALL */

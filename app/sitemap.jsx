@@ -1,25 +1,25 @@
 export default function sitemap() {
   return [
     {
-      url: "https://Arcenik.com/",
+      url: "https://arceniktechnologies/",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://Arcenik.com/about",
+      url: "https://arceniktechnologies/about",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://Arcenik.com/works",
+      url: "https://arceniktechnologies/works",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://Arcenik.com/contact",
+      url: "https://arceniktechnologies/contact",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,

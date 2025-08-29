@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "Arcenik",
     images: [
       {
-        url: "/images/og-image.webp", // Create an optimized OG image
+        url: "/images/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Arcenik - Website Development in Vapi",
@@ -79,8 +79,8 @@ const jsonLd = {
       url: "https://arceniktechnologies.com/",
       telephone: "+91-7777909218", // Add your actual phone number
       email: "contact@arcenik.com", // Add your actual email
-      image: "https://arceniktechnologies.com//images/dwlogo.webp",
-      logo: "https://arceniktechnologies.com//images/dwlogo.webp",
+      image: "https://arceniktechnologies.com/images/logo1.png",
+      logo: "https://arceniktechnologies.com/images/logo1.png",
       sameAs: [
         // Add your social media URLs
         "https://www.facebook.com/arcenik",
@@ -225,7 +225,7 @@ const jsonLd = {
       url: "https://arceniktechnologies.com/",
       logo: {
         "@type": "ImageObject",
-        url: "https://arceniktechnologies.com//images/dwlogo.webp",
+        url: "https://arceniktechnologies.com//images/logo1.png",
         width: 600,
         height: 60,
       },
@@ -253,22 +253,6 @@ export default function RootLayout({ children }) {
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://arceniktechnologies.com/" />
-
-        {/* Preload critical fonts */}
-        <link
-          rel="preload"
-          href="/fonts/SF Pro Text 400.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/SF PRO DISPLAY 700.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
 
         {/* Additional SEO meta tags */}
         <meta name="author" content="Arcenik" />

@@ -211,6 +211,7 @@ export const SectionProjectsMobile = () => {
               className={"embla__dot".concat(
                 index === selectedIndex ? " embla__dot--selected" : ""
               )}
+              aria-label={`Go to project ${index + 1}`}
             />
           ))}
         </div>

@@ -334,6 +334,7 @@ export const SectionProjects = () => {
               className={`embla__dot${
                 index === selectedIndex ? " embla__dot--selected" : ""
               }`}
+              aria-label={`Go to project ${index + 1}`}
             />
           ))}
         </div>
